@@ -1,0 +1,241 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1d212a;
+}
+
+.header-container {
+    padding-bottom: 130px;
+    background-color: #1e222e;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    font-weight: 700;
+}
+
+.header-content h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.header-content .totalFollowers {
+    color: #909dbf;
+    font-size: 14px;
+}
+
+.main-container {
+    margin-top: -100px
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.content-header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header i {
+    margin-right: 9px;
+    font-size: 22px;
+}
+
+.content-header p {
+    font-size: 13px;
+}
+
+.main-content {
+    color: white;
+}
+
+.main-content h4 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.main-content h5 {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #f83d79;
+    margin-bottom: 36px !important;
+}
+
+.change-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.change-data.valid {
+    color: #1db489;
+}
+
+.info-card {
+    width: 100%;
+    max-width: 325px;
+    padding: 32px 20px 25px 20px;
+    margin: 0 auto 8px auto;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    user-select: none;
+    transition: background-color 0.3s;
+    background-color: #252b40;
+}
+
+.info-card-top::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info-card-top:nth-child(1)::before {
+    background-color: #198ff5;
+}
+
+.info-card-top:nth-child(2)::before {
+    background-image: linear-gradient(to right, #198ff5, #1a59f5);
+}
+
+.info-card-top:nth-child(3)::before {
+    background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.info-card-top:nth-child(4)::before {
+    background-image: linear-gradient(to right, white, grey);
+}
+
+.overview-container {
+
+}
+
+.overview-container h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.card-title h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.card-title i {
+    font-size: 21px;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.card-description h5 {
+    font-size: 28px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 52px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 5px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-image: linear-gradient(to right, #df4996, #fdc468);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 0 !important;
+}
+
+.switch-container p {
+    font-size: 14px;
+}
